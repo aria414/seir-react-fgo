@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ServantList from "./pages/servantslist";
+
+/* ----------------------------------------------
+POSSIBLE COMPONENT STRUCTURE
+- Main (introduction, news)
+- Character Listing
+- Individaul Character Display
+- Header
+- Footer
+Indexing: https://api.atlasacademy.io/export/NA/basic_servant.json
+Display Individual: https://api.atlasacademy.io/nice/NA/servant/800100
+Create by this amazing FGO comminity: https://atlasacademy.io/about-us/
+---------------------------------------------- */
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>E-Rank Gatcha Luck</h1>
+      <ServantList />
     </div>
   );
 }
