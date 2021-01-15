@@ -7,7 +7,7 @@
 
 ## Project Description
 
-Simple site for displaying and searching Servant data in the FGO game. Similar to the korilla receipt and the shopping cart lab.
+Simple site for displaying character data in the FGO game. Similar to the iStocks lab.
 
 The inspiration came from this website where I used to look up character info when I build teams in the game.
 
@@ -55,6 +55,35 @@ https://api.atlasacademy.io/nice/NA/servant/800100
       }
     }
 }
+```
+
+Other character info
+
+```
+  "noblePhantasms": [
+    {
+      id": 800101,
+      "num": 1,
+      "card": "arts",
+      "name": "Lord Chaldeas",
+      "ruby": " ",
+      "icon": "https://assets.atlasacademy.io/GameData/NA/Servants/Commands/800100/card_servant_np.png",
+      "rank": "D",
+      "type": "Anti-Personnel",
+      "detail": "Increase DEF (3 turns) <effect increases with Overcharge> & apply Incoming Damage Cut status (3 turns) for all allies",
+    },
+    {
+      "id": 800104,
+      "num": 1,
+      "card": "arts",
+      "name": "Lord Camelot",
+      "ruby": " ",
+      "icon": "https://assets.atlasacademy.io/GameData/NA/Servants/Commands/800100/card_servant_np1.png",
+      "rank": "B+++",
+      "type": "Anti-Evil",
+      "detail": "Increase DEF (3 turns) <effect increases with Overcharge> & apply Incoming Damage Cut status (3 turns) for all allies + increase ATK for all allies except yourself",
+    }
+  ]
 ```
 
 ## Wireframes
