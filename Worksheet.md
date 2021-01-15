@@ -61,8 +61,8 @@ https://api.atlasacademy.io/nice/NA/servant/800100
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [Wireframes](https://drive.google.com/file/d/1Pl_BkyrFbi_PA2b_LPNhdwWSecAQNLWt/view?usp=sharing)
-- [React Architecture](https://docs.google.com/drawings/d/1VBHthZz1P3aszosLFiFmN9Vi_7Jk4wEUIzoLny4NWrk/edit?usp=sharing)
+- [Wireframes](https://drive.google.com/drive/folders/14mjyCnoGD-uqrOlGJEYve3-fOqMsxhI8?usp=sharing)
+- [React Architecture](https://drive.google.com/drive/folders/1G3Tq8J_I8Lv_ljFvDZv2ms7wyXtOmVqo?usp=sharing)
 
 ### MVP/PostMVP - 5min
 
@@ -127,6 +127,9 @@ Time frames are also key in the development cycle. You have limited time to code
 ## Additional Libraries
 
 Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.
+
+-SCSS
+-React Bootstrap
 
 ## Code Snippet
 
