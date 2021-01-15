@@ -61,22 +61,41 @@ https://api.atlasacademy.io/nice/NA/servant/800100
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Wireframes](https://drive.google.com/file/d/1Pl_BkyrFbi_PA2b_LPNhdwWSecAQNLWt/view?usp=sharing)
+- [React Architecture](https://docs.google.com/drawings/d/1VBHthZz1P3aszosLFiFmN9Vi_7Jk4wEUIzoLny4NWrk/edit?usp=sharing)
 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
 
-#### MVP EXAMPLE
+#### MVP - Focus on making each component usable.
 
-- Find and use external api
-- Render data on page
-- Allow user to interact with the page
+| Component                       | Priority | Estimated Time | Actual Time |
+| ------------------------------- | :------: | :------------: | :---------: |
+| Find Workable API               |    H     |     8 hrs      |     hrs     |
+| Deploy API/ Find endpoints      |    H     |     10 hrs     |     hrs     |
+| Set Up Page Components          |    H     |     6 hrs      |     hrs     |
+| Render List from API            |    H     |     5 hrs      |     hrs     |
+| Render Individual Item from API |    H     |     5 hrs      |     hrs     |
+| Set up Nav and Footer Comp      |    H     |     3 hrs      |     hrs     |
+| Link Pages with Router          |    H     |     3 hrs      |     hrs     |
+| Total                           |    H     |     40 hrs     |     hrs     |
 
-#### PostMVP EXAMPLE
+#### PostMVP - Mainly styling and layouting the app
 
-- Add localStorage or firebase for storage
+| Components Styled              | Priority | Estimated Time | Actual Time |
+| ------------------------------ | :------: | :------------: | :---------: |
+| Mobile Main page               |    H     |     3 hrs      |     hrs     |
+| Mobile Character List page     |    H     |     5 hrs      |     hrs     |
+| Mobile character Display Page  |    H     |     5 hrs      |     hrs     |
+| Nav Mobile                     |    H     |     2 hrs      |     hrs     |
+| Footer Mobile                  |    H     |     2 hrs      |     hrs     |
+| Desktop Main page              |    H     |     4 hrs      |     hrs     |
+| Desktop Character List page    |    H     |     5 hrs      |     hrs     |
+| Desktop character Display Page |    H     |     5 hrs      |     hrs     |
+| Desktop Nav                    |    H     |     2 hrs      |     hrs     |
+| Desktop Footer                 |    H     |     2 hrs      |     hrs     |
+| Total Hrs                      |    H     |     35 hrs     |     hrs     |
 
 ## Components
 
@@ -84,19 +103,26 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
 
-| Component |                          Description                          |
-| --------- | :-----------------------------------------------------------: |
-| App       | This will make the initial data pull and include React Router |
-| Header    |          This will render the header include the nav          |
-| Footer    |          This will render the header include the nav          |
+| Component              |                             Description                              |
+| ---------------------- | :------------------------------------------------------------------: |
+| App                    |         Deploy Main page Nav, Footer and Character List page         |
+| Header                 |             This will render the header include the nav              |
+| Footer                 |        This will render the footer include some sort of menu         |
+| Main page              |               Main page to show introduction of site.                |
+| Character List page    |           Make call to API and display list of characters            |
+| Character Display page | Use the ID passed in from Character List to display single character |
 
 Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-| Component        | Priority | Estimated Time | Time Invetsted | Actual Time |
-| ---------------- | :------: | :------------: | :------------: | :---------: |
-| Adding Form      |    H     |      3hrs      |     3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |     2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |      5hrs      |    5hrs     |
+| Component              | Priority | Estimated Time | Actual Time |
+| ---------------------- | :------: | :------------: | :---------: |
+| App                    |    H     |     2 hrs      |   3.5hrs    |
+| Header                 |    H     |     4 hrs      |   2.5hrs    |
+| Footer                 |    H     |     2 hrs      |    5hrs     |
+| Main page              |    H     |     2 hrs      |   3.5hrs    |
+| Character List page    |    H     |     6 hrs      |   2.5hrs    |
+| Character Display page |    H     |     6 hrs      |    5hrs     |
+| Total                  |    H     |     22 hrs     |    5hrs     |
 
 ## Additional Libraries
 
