@@ -3,7 +3,7 @@
 ## Project Links
 
 - [SEIR-React-FGO](https://github.com/aria414/seir-react-fgo)
-- [add your deployment link]()
+- [Deployed on Netlify](https://seir-react-fgo.netlify.app/)
 
 ## Project Description
 
