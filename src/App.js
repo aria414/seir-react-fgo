@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import Main from "./pages/main";
 import ServantList from "./pages/servantslist";
 import Nav from "./components/nav";
-
 import ServantDisplay from "./pages/servantdisplay";
 
 /* ----------------------------------------------
