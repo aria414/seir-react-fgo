@@ -1,14 +1,74 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
-.container {
+.content {
+  border: 2px solid lightblue;
+  max-width: 650px;
+  margin: 0 auto;
+  min-height: 700px;
+  padding: 2%;
+  background-color: #f4f1e8;
+}
+
+header {
+  background-color: #073763;
+  color: white;
+}
+.nav {
+  font-size: 2em;
+  text-decoration: none;
   display: flex;
-  justify-content: space-evenly;
-  text-align: left;
+  justify-content: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.nav a {
+  color: white;
+  margin-right: 3%;
 }
 
 .servant-list,
 .servant-display {
-  border: 2px solid lightblue;
+  text-align: left;
+  border: 1px solid;
   padding: 3%;
+}
+
+.right {
+  margin-left: 30%;
+}
+
+/* .react-icons {
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  font-weight: 300;
+}
+.react-icons:hover {
+  color: #9eeaff;
+} */
+.icon {
+  border: 2px solid #9eeaff;
+  padding: 10px;
+  width: 50%;
+}
+
+i.las {
+  color: #fff;
+  font-size: 74px;
+  /* border: 2px solid #9eeaff;
+  padding: 12px;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: 50%; */
+}
+i.las:hover {
+  color: #9eeaff;
+}
+
+.main img {
+  object-fit: cover;
+  width: 100%;
 }

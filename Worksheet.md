@@ -29,6 +29,8 @@ Second link has the individual data for each character. The individual data can 
 https://api.atlasacademy.io/nice/NA/servant/800100
 ```
 
+## Main Info for each characters
+
 ```
 {
   "id": 800100,
@@ -57,7 +59,7 @@ https://api.atlasacademy.io/nice/NA/servant/800100
 }
 ```
 
-Other character info
+## Special attack info
 
 ```
   "noblePhantasms": [
@@ -93,6 +95,18 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - [Wireframes](https://drive.google.com/drive/folders/14mjyCnoGD-uqrOlGJEYve3-fOqMsxhI8?usp=sharing)
 - [React Architecture](https://drive.google.com/drive/folders/1G3Tq8J_I8Lv_ljFvDZv2ms7wyXtOmVqo?usp=sharing)
 
+[Individual Card Inspiration](https://www.behance.net/gallery/87081313/Game-Portal?tracking_source=search_projects_recommended%7Cgame%20list)
+
+![Card Image](https://drive.google.com/uc?export=download&id=1eM8WkH8cYcGHQYCLWO7Avj4S3GWoYkcd)
+
+[Card List Inspiration](https://www.behance.net/gallery/97780191/StrategyBoards-Game-Planner?tracking_source=search_projects_recommended%7Cleague%20of%20legends)
+
+![Card Image](https://drive.google.com/uc?export=download&id=1xgYKtltuMcWKfK59BiyPR9X5eAwFWAu9)
+
+[Card List Inspiration](https://www.behance.net/gallery/107441469/Game-Streaming-App-Design-Concept?tracking_source=search_projects_recommended%7Cgame%20mobile%20character)
+
+![Card Image](https://drive.google.com/uc?export=download&id=1Rx8ob6OvrEQq8eReZY8VFni0I8UUJIEu)
+
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
@@ -101,30 +115,31 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Component                       | Priority | Estimated Time | Actual Time |
 | ------------------------------- | :------: | :------------: | :---------: |
-| Find Workable API               |    H     |     8 hrs      |     hrs     |
-| Deploy API/ Find endpoints      |    H     |     10 hrs     |     hrs     |
+| Find Workable API               |    H     |     5 hrs      |     hrs     |
+| Deploy API/ Find endpoints      |    H     |     3 hrs      |     hrs     |
 | Set Up Page Components          |    H     |     6 hrs      |     hrs     |
-| Render List from API            |    H     |     5 hrs      |     hrs     |
-| Render Individual Item from API |    H     |     5 hrs      |     hrs     |
+| Render List from API            |    H     |     2 hrs      |     hrs     |
+| Render Individual Item from API |    H     |     2 hrs      |     hrs     |
+| Use stats to make chart         |    H     |     5 hrs      |     hrs     |
 | Set up Nav and Footer Comp      |    H     |     3 hrs      |     hrs     |
 | Link Pages with Router          |    H     |     3 hrs      |     hrs     |
-| Total                           |    H     |     40 hrs     |     hrs     |
+| Total                           |    H     |     29 hrs     |     hrs     |
 
 #### PostMVP - Mainly styling and layouting the app
 
 | Components Styled              | Priority | Estimated Time | Actual Time |
 | ------------------------------ | :------: | :------------: | :---------: |
-| Mobile Main page               |    H     |     3 hrs      |     hrs     |
-| Mobile Character List page     |    H     |     5 hrs      |     hrs     |
-| Mobile character Display Page  |    H     |     5 hrs      |     hrs     |
+| Mobile Main page               |    H     |     1 hrs      |     hrs     |
+| Mobile Character List page     |    H     |     2 hrs      |     hrs     |
+| Mobile character Display Page  |    H     |     2 hrs      |     hrs     |
 | Nav Mobile                     |    H     |     2 hrs      |     hrs     |
 | Footer Mobile                  |    H     |     2 hrs      |     hrs     |
-| Desktop Main page              |    H     |     4 hrs      |     hrs     |
-| Desktop Character List page    |    H     |     5 hrs      |     hrs     |
-| Desktop character Display Page |    H     |     5 hrs      |     hrs     |
+| Desktop Main page              |    H     |     3 hrs      |     hrs     |
+| Desktop Character List page    |    H     |     4 hrs      |     hrs     |
+| Desktop character Display Page |    H     |     4 hrs      |     hrs     |
 | Desktop Nav                    |    H     |     2 hrs      |     hrs     |
 | Desktop Footer                 |    H     |     2 hrs      |     hrs     |
-| Total Hrs                      |    H     |     35 hrs     |     hrs     |
+| Total Hrs                      |    H     |     24 hrs     |     hrs     |
 
 ## Components
 
