@@ -20,7 +20,7 @@ const ServantDisplay = (props) => {
     setCurrent(data);
     console.log("Data grabbed: ", data);
   };
-
+  
   React.useEffect(() => {
     getServant();
   }, []);
