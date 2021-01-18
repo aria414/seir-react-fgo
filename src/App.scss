@@ -16,7 +16,7 @@ header {
   color: white;
 }
 .nav {
-  font-size: 2em;
+  font-size: 3em;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -40,6 +40,16 @@ header {
   margin-left: 30%;
 }
 
+.icon {
+  border: 2px solid #9eeaff;
+  width: 50%;
+}
+
+.main img {
+  object-fit: cover;
+  width: 100%;
+}
+
 /* .react-icons {
   color: #fff;
   width: 2em;
@@ -49,26 +59,13 @@ header {
 .react-icons:hover {
   color: #9eeaff;
 } */
-.icon {
-  border: 2px solid #9eeaff;
-  padding: 10px;
-  width: 50%;
-}
 
+//Give the icons a large padding so when i hover, it will do the effect.
 i.las {
   color: #fff;
-  font-size: 74px;
-  /* border: 2px solid #9eeaff;
-  padding: 12px;
-  margin-left: -10px;
-  margin-right: -10px;
-  width: 50%; */
-}
-i.las:hover {
-  color: #9eeaff;
-}
-
-.main img {
-  object-fit: cover;
-  width: 100%;
+  padding: 10px 137px 10px 137px;
+  &:hover {
+    color: #9eeaff;
+    cursor: pointer;
+  }
 }

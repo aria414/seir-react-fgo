@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css";
+import "../App.scss";
+
 
 const ServantDisplay = (props) => {
   console.log("You summoned: ", props.match.params.symbol);
@@ -30,6 +31,7 @@ const ServantDisplay = (props) => {
       current.extraAssets.charaGraph.ascension["1"]
     );
     const image1 = current.extraAssets.charaGraph.ascension["1"];
+
     return (
       <div>
         <img src={image1} alt={current.name} />

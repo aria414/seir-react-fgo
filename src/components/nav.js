@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BiHomeSmile } from "react-icons/bi";
-import { RiFilePaper2Line } from "react-icons/ri";
 
 const Nav = (props) => {
   return (
@@ -24,6 +22,8 @@ const Nav = (props) => {
 export default Nav;
 
 /* 
+import { BiHomeSmile } from "react-icons/bi";
+import { RiFilePaper2Line } from "react-icons/ri";
 
     <div className="nav">
       <Link to="/">

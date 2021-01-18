@@ -1,6 +1,6 @@
 import React from "react";
 import ServantDisplay from "./servantdisplay";
-import "../App.css";
+import "../App.scss";
 import { Link } from "react-router-dom";
 
 const ServantList = () => {

@@ -1,4 +1,5 @@
-import "./App.css";
+import "./App.scss";
+
 import { Route, Switch } from "react-router-dom";
 import Main from "./pages/main";
 import ServantList from "./pages/servantslist";
