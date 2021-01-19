@@ -8,12 +8,12 @@ const Main = () => {
       <h1>Main Page</h1>
       <p>Unlimited Salt Works!</p>
       <Mychart />
-      <img src={background} alt="back" />
     </div>
   );
 };
 
 export default Main;
 /*
+      <img src={background} alt="back" />
 
 */

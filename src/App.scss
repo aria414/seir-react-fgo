@@ -1,14 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
+
 .App {
   text-align: center;
   box-sizing: border-box;
+  line-height: 1.4em;
+  font-family: "Open Sans", sans-serif;
 }
 .content {
-  border: 2px solid lightblue;
+  border: 1px solid #c1e1f7;
   max-width: 650px;
   margin: 0 auto;
   min-height: 700px;
-  padding: 2%;
+  padding: 4% 0 0% 0;
   background-color: #f4f1e8;
+  background: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  font-size: 1.6em;
+  color: #a66800;
 }
 
 header {
@@ -16,7 +27,7 @@ header {
   color: white;
 }
 .nav {
-  font-size: 3em;
+  font-size: 2em;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -32,16 +43,47 @@ header {
 .servant-list,
 .servant-display {
   text-align: left;
-  border: 1px solid;
-  padding: 3%;
+  //border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8%;
+}
+
+.servant-list a {
+  //border: 1px solid brown;
+  width: 49%;
+  min-width: 130px;
+  min-height: 200px;
+  text-decoration: none;
+  color: #000;
+  img {
+    // border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px #4e4e4e;
+  }
+}
+
+.cards {
+  //border: 1px solid red;
+  max-width: 130px;
+  margin: 0 auto;
+  min-height: 240px;
+}
+
+.servant-name {
+  font-weight: 600;
+  color: #002585;
+}
+.servant-id {
+  color: #985f00;
 }
 
 .right {
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .icon {
-  border: 2px solid #9eeaff;
+  border: 1px solid #c1e1f7;
   width: 50%;
 }
 
@@ -63,9 +105,17 @@ header {
 //Give the icons a large padding so when i hover, it will do the effect.
 i.las {
   color: #fff;
-  padding: 10px 137px 10px 137px;
+  padding: 10px 40%;
   &:hover {
     color: #9eeaff;
     cursor: pointer;
   }
+}
+
+i.las.la-star {
+  font-size: 1.1em;
+  color: #eebc00;
+  display: inline;
+  -webkit-text-stroke: 1px black;
+  margin-left: -40px;
 }

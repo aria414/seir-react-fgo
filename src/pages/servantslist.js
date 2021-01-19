@@ -29,20 +29,23 @@ const ServantList = () => {
         <Link to={`/servantdisplay/${item.id}`} key={index}>
           <div className="cards">
             <img src={item.face} alt={item.name} />
-            <p>{item.name}</p>
-            <p>
+            <p className="servant-name">{item.name}</p>
+            <p className="servant-id">
               {item.id}
-              <span class="right">{item.rarity}</span>
+              <span className="right">
+                {item.rarity}
+                <i className="las la-star"></i>
+              </span>
             </p>
           </div>
         </Link>
       );
     });
     return (
-      <div className="servant-list">
+      <>
         <h1>Servants List</h1>
-        {servantArr}
-      </div>
+        <div className="servant-list">{servantArr}</div>
+      </>
     );
   };
 
