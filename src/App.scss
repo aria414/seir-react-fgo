@@ -47,45 +47,48 @@ header {
   flex-wrap: wrap;
   padding-top: 8%;
   //border: 1px solid blue;
-  padding-left: 4%;
+  //padding-left: 4%;
 }
 
 .servant-list a {
   //border: 1px solid brown;
-  width: 48%;
-  min-width: 130px;
+  width: 29%;
+  min-width: 92px;
   min-height: 200px;
   text-decoration: none;
   color: #000;
+  margin-left: 3%;
   //border: 1px solid red;
   img {
     // border: 1px solid blue;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 1px #4e4e4e;
+    box-shadow: 0px 1px 3px 1px #8c8c8c;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
 .cards {
-  //border: 1px solid red;
-  max-width: 160px;
+  //max-width: 160px;
   margin: 0 auto;
   min-height: 240px;
   text-align: center;
+  // margin-left: 8px;
 }
 
 .servant-name {
   font-weight: 600;
   color: #002585;
   text-align: left;
-  margin-left: 10%;
+  //margin-left: 10%;
 }
 .servant-id {
   color: #985f00;
-  margin-left: 10%;
+  //margin-left: 10%;
 }
 
 .right {
-  margin-left: 20%;
+  margin-left: 14%;
 }
 
 .icon {
@@ -119,9 +122,9 @@ i.las {
 }
 
 i.las.la-star {
-  font-size: 1.1em;
+  font-size: 0.8em;
   color: #eebc00;
   display: inline;
   -webkit-text-stroke: 1px black;
-  margin-left: -40px;
+  margin-left: -34px;
 }
