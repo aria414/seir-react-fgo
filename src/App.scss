@@ -23,7 +23,7 @@ h1 {
 }
 
 header {
-  background-color: #073763;
+  background-color: #022346;
   color: white;
 }
 .nav {
@@ -43,19 +43,21 @@ header {
 .servant-list,
 .servant-display {
   text-align: left;
-  //border: 1px solid;
   display: flex;
   flex-wrap: wrap;
   padding-top: 8%;
+  //border: 1px solid blue;
+  padding-left: 4%;
 }
 
 .servant-list a {
   //border: 1px solid brown;
-  width: 49%;
+  width: 48%;
   min-width: 130px;
   min-height: 200px;
   text-decoration: none;
   color: #000;
+  //border: 1px solid red;
   img {
     // border: 1px solid blue;
     border-radius: 10px;
@@ -65,17 +67,21 @@ header {
 
 .cards {
   //border: 1px solid red;
-  max-width: 130px;
+  max-width: 160px;
   margin: 0 auto;
   min-height: 240px;
+  text-align: center;
 }
 
 .servant-name {
   font-weight: 600;
   color: #002585;
+  text-align: left;
+  margin-left: 10%;
 }
 .servant-id {
   color: #985f00;
+  margin-left: 10%;
 }
 
 .right {
@@ -83,7 +89,7 @@ header {
 }
 
 .icon {
-  border: 1px solid #c1e1f7;
+  border: 1px solid #417193;
   width: 50%;
 }
 
