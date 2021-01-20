@@ -222,8 +222,9 @@ i.las.la-star {
 }
 
 .progress {
-  background-color: #cccccc;
+  background-color: #cccccc !important;
   border: 1px solid black;
+  border-radius: 0px !important;
 }
 .bg-danger {
   background-color: #e94a4a !important;

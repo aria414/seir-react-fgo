@@ -14,8 +14,7 @@ const ServantDisplay = (props) => {
   const [current, setCurrent] = React.useState(null);
 
   //URL to grab the individual servant data. Use ID as the symbol
-  //const url = `https://api.atlasacademy.io/nice/NA/servant/${symbol}`;
-  //https://api.atlasacademy.io/nice/NA/svt/100200?lore=true&lang=en
+  //https://api.atlasacademy.io/nice/NA/servant/${symbol}
 
   const url = `https://api.atlasacademy.io/nice/NA/svt/${symbol}?lore=true&lang=en`;
 
@@ -32,7 +31,16 @@ const ServantDisplay = (props) => {
 
   const loaded = () => {
     //Grab the first ascension image to display
-    const image1 = current.extraAssets.charaGraph.ascension["1"];
+    const imageObj = current.extraAssets.charaGraph.ascension;
+
+    const image1 = imageObj[Object.keys(imageObj)[0]];
+
+    // if (current.extraAssets.charaGraph.ascension["1"]!==null) {
+    //   image1 = current.extraAssets.charaGraph.ascension["1"]
+    // }
+    // else {
+    //   image1 = current.extraAssets.charaGraph.ascension["0"];
+    // }
 
     //What is the rarity? use the number to decide how many times to display star icon
     //Rarity 4 -> show 4 stars.
@@ -45,9 +53,6 @@ const ServantDisplay = (props) => {
       );
     }
     console.log("star array:", stararray);
-    //https://static.wikia.nocookie.net/fategrandorder/images/8/84/Quick.png/
-    //https://static.wikia.nocookie.net/fategrandorder/images/9/95/Arts.png/
-    // https://static.wikia.nocookie.net/fategrandorder/images/6/6e/Buster.png/
     console.log("command cards: ", current.cards);
 
     const comdCard = [];
