@@ -15,6 +15,11 @@ const Nav = (props) => {
             <i className="las la-scroll"></i>
           </Link>
         </div>
+        <div className="icon">
+          <Link to="/">
+            <i className="las la-images"></i>
+          </Link>
+        </div>
       </div>
     </header>
   );
@@ -22,6 +27,7 @@ const Nav = (props) => {
 export default Nav;
 
 /* 
+
 import { BiHomeSmile } from "react-icons/bi";
 import { RiFilePaper2Line } from "react-icons/ri";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import background from "../images/background.jpg";
 import Mychart from "../components/mychart";
 
 const Main = () => {

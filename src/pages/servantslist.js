@@ -1,7 +1,9 @@
 import React from "react";
-import ServantDisplay from "./servantdisplay";
+//import ServantDisplay from "./servantdisplay";
 import "../App.scss";
 import { Link } from "react-router-dom";
+//Import the file containing the images for the class icons.
+import iconimages from "../Iconimages";
 
 const ServantList = () => {
   // Use this URL to get the list of Servants to Display
@@ -24,7 +26,7 @@ const ServantList = () => {
   // use the loaded() to display stuff. First map out servantIndex so it looks cleaner.
   // The new servantArr array only has NAME and ID grabed from the API
   const loaded = () => {
-    const servantArr = servantIndex.map((item, index) => {
+    const servantarr = servantIndex.map((item, index) => {
       return (
         <Link to={`/servantdisplay/${item.id}`} key={index}>
           <div className="cards">
@@ -41,10 +43,21 @@ const ServantList = () => {
         </Link>
       );
     });
+
+    // Map the icons images from the array with urls and the alt name.
+    const classIcons = iconimages.map((item, index) => {
+      return (
+        <li key={index}>
+          <img src={item.iconurl} alt={item.name} />
+        </li>
+      );
+    });
+
     return (
       <>
         <h1>Servants List</h1>
-        <div className="servant-list">{servantArr}</div>
+        <ul className="class-icons">{classIcons}</ul>
+        <div className="servant-list">{servantarr}</div>
       </>
     );
   };

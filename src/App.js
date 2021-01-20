@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Switch>
-        <div className="content">
+      <div className="content">
+        <Switch>
           <Route exact path="/">
             <Main />
           </Route>
@@ -34,8 +34,8 @@ function App() {
             path="/servantdisplay/:symbol"
             render={(routerProps) => <ServantDisplay {...routerProps} />}
           />
-        </div>
-      </Switch>
+        </Switch>
+      </div>
     </div>
   );
 }

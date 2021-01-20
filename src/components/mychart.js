@@ -2,35 +2,51 @@ import { HorizontalBar } from "react-chartjs-2";
 import React from "react";
 
 const Mychart = () => {
-  const [chartData, setChartData] = React.useState({
-    labels: ["Min Level", "Max Level"],
-    datasets: [
-      {
-        label: "Attack Level: (1 - 80)",
-        data: [1455, 8730],
-        //backgroundColor:'green',
-        backgroundColor: ["rgba(255, 99, 132, 0.6)", "rgba(255, 99, 132, 0.8)"],
-      },
-      {
-        label: "Attack: (90 - 100)",
-        data: [9653, 10575],
-        //backgroundColor:'green',
-        backgroundColor: ["rgba(255, 99, 132, 0.6)", "rgba(255, 99, 132, 0.8)"],
-      },
-      {
-        label: "Health Level: (1 - 80)",
-        data: [2060, 12877],
-        //backgroundColor:'green',
-        backgroundColor: ["rgba(75, 192, 192, 0.6)", "rgba(75, 192, 192, 0.8)"],
-      },
-      {
-        label: "Health: (90 - 100)",
-        data: [14248, 15619],
-        //backgroundColor:'green',
-        backgroundColor: ["rgba(75, 192, 192, 0.6)", "rgba(75, 192, 192, 0.8)"],
-      },
-    ],
-  });
+  const [chartData, setChartData] = React.useState({});
+
+  React.useEffect(() => {
+    setChartData({
+      labels: ["Min Level", "Max Level"],
+      datasets: [
+        {
+          label: "Attack Level: (1 - 80)",
+          data: [1455, 8730],
+          //backgroundColor:'green',
+          backgroundColor: [
+            "rgba(255, 99, 132, 0.6)",
+            "rgba(255, 99, 132, 0.8)",
+          ],
+        },
+        {
+          label: "Attack: (90 - 100)",
+          data: [9653, 10575],
+          //backgroundColor:'green',
+          backgroundColor: [
+            "rgba(255, 99, 132, 0.6)",
+            "rgba(255, 99, 132, 0.8)",
+          ],
+        },
+        {
+          label: "Health Level: (1 - 80)",
+          data: [2060, 12877],
+          //backgroundColor:'green',
+          backgroundColor: [
+            "rgba(75, 192, 192, 0.6)",
+            "rgba(75, 192, 192, 0.8)",
+          ],
+        },
+        {
+          label: "Health: (90 - 100)",
+          data: [14248, 15619],
+          //backgroundColor:'green',
+          backgroundColor: [
+            "rgba(75, 192, 192, 0.6)",
+            "rgba(75, 192, 192, 0.8)",
+          ],
+        },
+      ],
+    });
+  }, []);
 
   // const [chartData, setChartData] = React.useState({
   //     labels: ["Strength"],
