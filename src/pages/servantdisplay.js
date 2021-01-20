@@ -30,17 +30,12 @@ const ServantDisplay = (props) => {
   }, []);
 
   const loaded = () => {
-    //Grab the first ascension image to display
+    //Grab the first ascension image to display.
+    //Store this really long object into a variable.
     const imageObj = current.extraAssets.charaGraph.ascension;
-
+    //Get the value from the 1st key of the object -
+    //1st key has the 1st image but sometimes naem of key is different. So just get 1st key
     const image1 = imageObj[Object.keys(imageObj)[0]];
-
-    // if (current.extraAssets.charaGraph.ascension["1"]!==null) {
-    //   image1 = current.extraAssets.charaGraph.ascension["1"]
-    // }
-    // else {
-    //   image1 = current.extraAssets.charaGraph.ascension["0"];
-    // }
 
     //What is the rarity? use the number to decide how many times to display star icon
     //Rarity 4 -> show 4 stars.

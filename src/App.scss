@@ -17,7 +17,10 @@
   background-size: cover;
   background-position: center;
 }
-
+/* Bootstrap has extra margin on <p>.. Getting rid of that . */
+p {
+  margin-bottom: 0px;
+}
 .strong {
   font-weight: 600;
 }
