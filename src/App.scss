@@ -58,8 +58,6 @@ header {
   position: fixed;
   background-color: #022346;
   color: white;
-  display: flex;
-  flex-wrap: wrap;
 }
 .search {
   display: none;
@@ -270,6 +268,11 @@ i.las.la-star {
       font-size: 1.8em;
     }
   }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .nav {
     max-width: 768px;
   }
