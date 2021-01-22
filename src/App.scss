@@ -6,23 +6,34 @@
   line-height: 1.4em;
   font-family: "Open Sans", sans-serif;
 }
+/* --------------------------
+MOBILE DESIGN
+----------------------------*/
 .content {
   border: 1px solid #c1e1f7;
   max-width: 650px;
   margin: 0 auto;
   min-height: 700px;
-  padding: 4% 0 0% 0;
+  padding: 10% 0 0% 0;
   background-color: #f4f1e8;
   background: url("./images/background.jpg");
   background-size: cover;
   background-position: center;
 }
+
+.main p {
+  text-align: left;
+  padding: 3%;
+}
 /* Bootstrap has extra margin on <p>.. Getting rid of that . */
 p {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 .strong {
   font-weight: 600;
+}
+a {
+  text-decoration: none !important;
 }
 
 h1 {
@@ -30,17 +41,36 @@ h1 {
   color: #a66800;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
 img {
   width: 100%;
 }
 
 header {
+  width: 100%;
+  position: fixed;
   background-color: #022346;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search {
+  display: none;
+  width: 20%;
+  height: 40px;
+  background-color: white;
+  margin-top: 1%;
+  border-radius: 15px;
 }
 .nav {
   font-size: 1.8em;
-  text-decoration: none;
   display: flex;
   justify-content: center;
   max-width: 650px;
@@ -53,21 +83,18 @@ header {
 }
 
 .icon {
-  //border: 1px solid #417193;
   width: 33%;
-}
-
-// .nav .icon:nth-child(1),
-// .nav .icon:nth-child(2) {
-//   border-right: 1px solid #417193;
-// }
-//Give the icons a large padding so when i hover, it will do the effect.
-i.las {
-  color: #d2e2ea;
-  padding: 5px 40%;
-  &:hover {
-    color: #9eeaff;
-    cursor: pointer;
+  //Give the icons a large padding so when i hover, it will do the effect.
+  i.las {
+    color: #d2e2ea;
+    padding: 5px 40%;
+    &:hover {
+      color: #9eeaff;
+      cursor: pointer;
+    }
+  }
+  h3 {
+    display: none;
   }
 }
 
@@ -77,73 +104,51 @@ i.las {
   display: flex;
   flex-wrap: wrap;
   padding-top: 8%;
-  //border: 1px solid blue;
-  //padding-left: 4%;
 }
 
+i.las.la-star {
+  color: #eebc00;
+  display: inline;
+  -webkit-text-stroke: 1px #a47506;
+}
 .servant-list a {
-  //border: 1px solid brown;
   width: 29%;
   min-width: 92px;
   min-height: 200px;
-  text-decoration: none;
   color: #000;
   margin-left: 3%;
-  //border: 1px solid red;
+  margin-bottom: 2%;
+  .cards {
+    margin: 0 auto;
+    //min-height: 180px;
+  }
   img {
-    // border: 1px solid blue;
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0px 1px 3px 1px #8c8c8c;
     width: 100%;
     object-fit: cover;
   }
-}
+  .servant-name {
+    font-weight: 600;
+    color: #002585;
+  }
+  .servant-id {
+    color: #985f00;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right {
+    // margin-left: 20%;
+    font-size: 1.05em;
+  }
 
-.cards {
-  //max-width: 160px;
-  margin: 0 auto;
-  min-height: 240px;
-  text-align: center;
-  // margin-left: 8px;
-}
-
-.servant-name {
-  font-weight: 600;
-  color: #002585;
-  text-align: left;
-  //margin-left: 10%;
-}
-.servant-id {
-  color: #985f00;
-  //margin-left: 10%;
-}
-
-.right {
-  margin-left: 15%;
-  font-size: 1.05em;
-}
-
-// .main img {
-//   object-fit: cover;
-//   width: 100%;
-// }
-
-/* .react-icons {
-  color: #fff;
-  width: 2em;
-  height: 2em;
-  font-weight: 300;
-}
-.react-icons:hover {
-  color: #9eeaff;
-} */
-
-i.las.la-star {
-  font-size: 0.8em;
-  color: #eebc00;
-  display: inline;
-  -webkit-text-stroke: 1px #a47506;
-  margin-left: -37%;
+  i.las.la-star {
+    font-size: 0.8em;
+    margin-left: 2px;
+  }
 }
 
 .class-icons {
@@ -160,26 +165,37 @@ i.las.la-star {
       background-color: #f1f9ff;
     }
   }
-  // img {
-  //   width: 100%;
-  //   object-fit: cover;
-  // }
 }
 
 .profile {
   max-width: 650px;
   margin: 0 auto;
   padding: 2%;
-  text-transform: uppercase;
   line-height: 3em;
-  text-align: center;
   img {
-    width: 90%;
+    width: 100%;
     margin-bottom: 3%;
+  }
+  h2,
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .svt-general {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    // align-items: center;
+    div {
+      text-align: center;
+      img {
+        width: 70px;
+      }
+    }
   }
   ul {
     display: flex;
-    font-size: 3em;
+    font-size: 2.3em;
     justify-content: center;
   }
   li {
@@ -200,6 +216,9 @@ i.las.la-star {
 
 .description {
   border-top: 2px solid #1a9acf;
+  p:first-child {
+    margin-top: 5%;
+  }
 }
 
 .stats {
@@ -212,7 +231,7 @@ i.las.la-star {
   }
 }
 .table {
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center;
   background-color: #b9e0e4;
   .table-bordered thead th {
@@ -223,7 +242,9 @@ i.las.la-star {
     border: 1px solid #9fc6da;
   }
 }
-
+.flat-table {
+  display: none;
+}
 .progress {
   background-color: #cccccc !important;
   border: 1px solid black;
@@ -231,4 +252,207 @@ i.las.la-star {
 }
 .bg-danger {
   background-color: #e94a4a !important;
+}
+
+.chart {
+  display: block;
+  max-width: 400px;
+  padding: 2%;
+}
+
+/* ========================================================
+====================== TABLET DESIGN =======================
+=========================================================== */
+@media screen and (min-width: 768px) {
+  .content {
+    min-width: 768px;
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  .nav {
+    max-width: 768px;
+  }
+  .icon {
+    padding-top: 15px;
+    height: 60px;
+    i.las {
+      display: none;
+    }
+    h3 {
+      display: flex;
+      font-size: 22px;
+      justify-content: center;
+    }
+  }
+  // ------------------- SERVANT LIST PAGE ---------------------
+  .servant-list a {
+    width: 23%;
+    max-height: 230px;
+    margin-left: 1.5%;
+    border-radius: 25px;
+    padding: 2%;
+    background-color: #00344a;
+    margin-bottom: 3%;
+    &:hover {
+      background-color: #1778a1;
+    }
+    .cards {
+      margin: 0 auto;
+      text-align: center;
+    }
+    img {
+      text-align: center;
+      width: 120px;
+      box-shadow: none;
+    }
+    .servant-name {
+      color: #fff;
+      margin-top: 5%;
+      text-align: left;
+    }
+    .servant-id {
+      color: #81d6ff;
+      margin-top: 3%;
+    }
+  }
+  .class-icons li {
+    width: 80px;
+    height: 80px;
+  }
+
+  //    ------------------- SERVANT DISPLAY PAGE ---------------------
+  .servant-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0;
+    .profile {
+      grid-column: 1 / 4;
+      max-width: 768px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-height: 500px;
+      line-height: 1em;
+      .svt-general {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        margin-left: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        h2 {
+          margin-right: 5%;
+        }
+        h2,
+        h3 {
+          text-align: left;
+        }
+        div {
+          //This div contains the class icon for each individual servant. Need to be fil length to push
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          img {
+            width: 70px;
+            margin-right: 2%;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        margin-bottom: 0;
+      }
+      ul {
+        margin-bottom: 0;
+      }
+    }
+
+    .description {
+      border-top: 2px solid #1a9acf;
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0;
+      p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.4em;
+        margin-bottom: 0 !important;
+      }
+      .stat-bar {
+        width: 48%;
+      }
+    }
+
+    .stats {
+      width: 768px;
+      font-size: 1em;
+      line-height: 1.3em;
+      margin: 0%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    h3 {
+      font-size: 1.3em;
+      margin-right: 3%;
+    }
+    .tall-table {
+      display: none;
+    }
+    .flat-table {
+      display: revert;
+    }
+    .table-responsive {
+      grid-column: 1 / 4;
+    }
+
+    .star-desc {
+      grid-column: 1 / 2;
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    .commands {
+      grid-column: 2 / 4;
+      display: flex;
+    }
+    .chart {
+      max-width: 750px;
+      grid-column: 1 / 4;
+    }
+  }
+}
+/* ========================================================
+====================== DESKTOP DESIGN =======================
+=========================================================== */
+@media screen and (min-width: 1024px) {
+  .content,
+  .profile,
+  .stats,
+  .nav {
+    min-width: 1024px;
+  }
+  .nav {
+    justify-content: flex-end;
+  }
+  .search {
+    display: revert;
+  }
+  .class-icons {
+    margin-top: 2%;
+  }
+  .servant-list {
+    padding-top: 5%;
+  }
+  .icon {
+    width: 25%;
+  }
+  .servant-list a {
+    width: 18%;
+  }
 }

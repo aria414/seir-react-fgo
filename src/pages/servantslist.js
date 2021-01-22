@@ -27,14 +27,25 @@ const ServantList = () => {
   // The new servantArr array only has NAME and ID grabed from the API
   const loaded = () => {
     const servantarr = servantIndex.map((item, index) => {
+      // Function to turn className to title case. Its all lower case right now...
+      const titleClass = (text) => {
+        let words = text.toLowerCase().split(" ");
+        for (let i = 0; i < words.length; i++) {
+          words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+        }
+        //console.log(words.join(" "));
+        return words.join(" ");
+      };
+      const svtClass = titleClass(item.className);
+
       return (
         <Link to={`/servantdisplay/${item.id}`} key={index}>
           <div className="cards">
             <img src={item.face} alt={item.name} />
             <p className="servant-name">{item.name}</p>
             <p className="servant-id">
-              {item.id}
-              <span className="right">
+              {svtClass}
+              <span className="servant-id right">
                 {item.rarity}
                 <i className="las la-star"></i>
               </span>

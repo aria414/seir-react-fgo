@@ -113,33 +113,29 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP - Focus on making each component usable.
 
-| Component                       | Priority | Estimated Time | Actual Time |
-| ------------------------------- | :------: | :------------: | :---------: |
-| Find Workable API               |    H     |     5 hrs      |     hrs     |
-| Deploy API/ Find endpoints      |    H     |     3 hrs      |     hrs     |
-| Set Up Page Components          |    H     |     6 hrs      |     hrs     |
-| Render List from API            |    H     |     2 hrs      |     hrs     |
-| Render Individual Item from API |    H     |     2 hrs      |     hrs     |
-| Use stats to make chart         |    H     |     5 hrs      |     hrs     |
-| Set up Nav and Footer Comp      |    H     |     3 hrs      |     hrs     |
-| Link Pages with Router          |    H     |     3 hrs      |     hrs     |
-| Total                           |    H     |     29 hrs     |     hrs     |
+| Component                      | Priority | Estimated Time | Actual Time |
+| ------------------------------ | :------: | :------------: | :---------: |
+| Find Workable API              |    M     |     5 hrs      |   2.5 hrs   |
+| Deploy API/ Find endpoints     |    M     |     3 hrs      |    4 hrs    |
+| Link Pages with Router         |    L     |     3 hrs      |   0.5 hrs   |
+| Mobile Main page               |    L     |     1 hrs      |   0.5 hrs   |
+| Mobile Character List page     |    H     |     5 hrs      |    6 hrs    |
+| Mobile character Display Page  |    H     |     8 hrs      |    6 hrs    |
+| Nav Mobile                     |    M     |     1 hrs      |    1 hrs    |
+| Desktop Main page              |    H     |     1 hrs      |   0.5 hrs   |
+| Desktop Character List page    |    H     |     4 hrs      |    2 hrs    |
+| Desktop character Display Page |    H     |     5 hrs      |   4.5 hrs   |
+| Nav Desktop                    |    M     |    1.5 hrs     |   0.5 hrs   |
+| Total Hrs                      |          |    37.5 hrs    |   31 hrs    |
 
 #### PostMVP - Mainly styling and layouting the app
 
-| Components Styled              | Priority | Estimated Time | Actual Time |
-| ------------------------------ | :------: | :------------: | :---------: |
-| Mobile Main page               |    H     |     1 hrs      |     hrs     |
-| Mobile Character List page     |    H     |     2 hrs      |     hrs     |
-| Mobile character Display Page  |    H     |     2 hrs      |     hrs     |
-| Nav Mobile                     |    H     |     2 hrs      |     hrs     |
-| Footer Mobile                  |    H     |     2 hrs      |     hrs     |
-| Desktop Main page              |    H     |     3 hrs      |     hrs     |
-| Desktop Character List page    |    H     |     4 hrs      |     hrs     |
-| Desktop character Display Page |    H     |     4 hrs      |     hrs     |
-| Desktop Nav                    |    H     |     2 hrs      |     hrs     |
-| Desktop Footer                 |    H     |     2 hrs      |     hrs     |
-| Total Hrs                      |    H     |     24 hrs     |     hrs     |
+| Component                     | Priority | Estimated Time | Actual Time |
+| ----------------------------- | :------: | :------------: | :---------: |
+| Get icons to show up          |    L     |     2 hrs      |     hrs     |
+| Put graphics on main page     |    M     |     2 hrs      |     hrs     |
+| Grab data and plug into chart |    H     |     4 hrs      |     hrs     |
+| Total Hrs                     |          |     8 hrs      |             |
 
 ## Components
 
@@ -160,13 +156,13 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component              | Priority | Estimated Time | Actual Time |
 | ---------------------- | :------: | :------------: | :---------: |
-| App                    |    H     |     2 hrs      |   3.5hrs    |
-| Header                 |    H     |     4 hrs      |   2.5hrs    |
-| Footer                 |    H     |     2 hrs      |    5hrs     |
-| Main page              |    H     |     2 hrs      |   3.5hrs    |
-| Character List page    |    H     |     6 hrs      |   2.5hrs    |
-| Character Display page |    H     |     6 hrs      |    5hrs     |
-| Total                  |    H     |     22 hrs     |    5hrs     |
+| App                    |    H     |     2 hrs      |     hrs     |
+| Header                 |    M     |     4 hrs      |     hrs     |
+| Footer                 |    L     |     2 hrs      |     hrs     |
+| Main page              |    L     |     2 hrs      |     hrs     |
+| Character List page    |    H     |     6 hrs      |     hrs     |
+| Character Display page |    H     |     6 hrs      |     hrs     |
+| Total                  |          |     22 hrs     |     hrs     |
 
 ## Additional Libraries
 

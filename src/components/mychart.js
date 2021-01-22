@@ -1,9 +1,37 @@
-import { HorizontalBar } from "react-chartjs-2";
+import { HorizontalBar, Line } from "react-chartjs-2";
 import React from "react";
+import "../App.scss";
 
 const Mychart = () => {
   const [chartData, setChartData] = React.useState({});
 
+  React.useEffect(() => {
+    setChartData({
+      labels: ["Lv1", "Lv Max", "Grail 90", "Grail 100"],
+      datasets: [
+        {
+          label: "Attack",
+          data: [1666, 9999, 11048, 12107],
+          backgroundColor: ["rgba(255, 99, 132, 0.0)"],
+          borderWidth: 1,
+          borderColor: "#e22f2f",
+          hoverBorderWidth: 3,
+          hoverBorderColor: "#000",
+        },
+        {
+          label: "Health",
+          data: [1781, 11135, 12313, 13501],
+          backgroundColor: ["rgba(65, 219, 129, 0.0)"],
+          borderWidth: 1,
+          borderColor: "#15af27",
+          hoverBorderWidth: 3,
+          hoverBorderColor: "#000",
+        },
+      ],
+    });
+  }, []);
+
+  /* --------------------------------------------
   React.useEffect(() => {
     setChartData({
       labels: ["Min Level", "Max Level"],
@@ -48,38 +76,18 @@ const Mychart = () => {
     });
   }, []);
 
-  // const [chartData, setChartData] = React.useState({
-  //     labels: ["Strength"],
-  //     datasets: [
-  //       {
-  //         label: "Population",
-  //         data: [40],
-  //         //backgroundColor:'green',
-  //         backgroundColor: [
-  //           "rgba(255, 99, 132, 0.6)",
-  //         ],
-  //         border: "solid"
-  //       },
-  //     ],
-  //   });
-
-  //   backgroundColor: [
-  //     "rgba(255, 99, 132, 0.6)",
-  //     "rgba(54, 162, 235, 0.6)",
-  //     "rgba(255, 206, 86, 0.6)",
-  //     "rgba(75, 192, 192, 0.6)",
-  //     "rgba(153, 102, 255, 0.6)",
-  //   ],
+--------------------------- */
 
   return (
-    <div>
-      <h3>Mashu's Attack and Health</h3>
-      <HorizontalBar
+    <div className="chart">
+      <Line
         data={chartData}
         options={{
+          responsive: true,
+          maintainAspectRatio: true,
           title: {
-            display: false,
-            text: "Attack and Health",
+            display: true,
+            text: "Growth Curve",
             fontSize: 25,
           },
           legend: {
@@ -102,7 +110,7 @@ const Mychart = () => {
             yAxes: [
               {
                 gridLines: {
-                  display: false,
+                  display: true,
                 },
               },
             ],
