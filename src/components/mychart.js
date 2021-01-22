@@ -2,30 +2,42 @@ import { HorizontalBar, Line } from "react-chartjs-2";
 import React from "react";
 import "../App.scss";
 
-const Mychart = () => {
+const Mychart = (props) => {
   const [chartData, setChartData] = React.useState({});
+  console.log("data passed in chart:", props);
+
+  let count = 0;
+  const levels = [];
+  props.attackData.forEach((item) => {
+    levels.push(++count);
+  });
 
   React.useEffect(() => {
     setChartData({
-      labels: ["Lv1", "Lv Max", "Grail 90", "Grail 100"],
+      labels: levels,
       datasets: [
         {
           label: "Attack",
-          data: [1666, 9999, 11048, 12107],
+          data: props.attackData,
           backgroundColor: ["rgba(255, 99, 132, 0.0)"],
-          borderWidth: 1,
+          borderWidth: 2,
           borderColor: "#e22f2f",
           hoverBorderWidth: 3,
           hoverBorderColor: "#000",
+          pointBackgroundColor: "rgba(0, 0, 0, 0.1)",
+          pointBorderColor: "rgba(0, 0, 0, 0.0)",
+          pointStyle: "line",
         },
         {
           label: "Health",
-          data: [1781, 11135, 12313, 13501],
+          data: props.healthData,
           backgroundColor: ["rgba(65, 219, 129, 0.0)"],
-          borderWidth: 1,
+          borderWidth: 2,
           borderColor: "#15af27",
           hoverBorderWidth: 3,
           hoverBorderColor: "#000",
+          pointBorderColor: "rgba(0, 0, 0, 0.0)",
+          pointStyle: "line",
         },
       ],
     });
@@ -109,6 +121,9 @@ const Mychart = () => {
             ],
             yAxes: [
               {
+                ticks: {
+                  display: true,
+                },
                 gridLines: {
                   display: true,
                 },

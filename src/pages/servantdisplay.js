@@ -280,7 +280,7 @@ const ServantDisplay = (props) => {
             <ul>{comdCard}</ul>
           </div>
         </section>
-        <Mychart />
+        <Mychart attackData={current.atkGrowth} healthData={current.hpGrowth} />
       </>
     );
   };
