@@ -94,6 +94,8 @@ const Mychart = (props) => {
     <div className="chart">
       <Line
         data={chartData}
+        width={100}
+        height={50}
         options={{
           responsive: true,
           maintainAspectRatio: true,
@@ -110,9 +112,11 @@ const Mychart = (props) => {
             xAxes: [
               {
                 ticks: {
-                  beginAtZero: true,
+                 // beginAtZero: true,
+                 min: 10,
                   //max: 100,
                   //display:false
+                  maxTicksLimit: 5,
                 },
                 gridLines: {
                   display: true,
@@ -123,6 +127,7 @@ const Mychart = (props) => {
               {
                 ticks: {
                   display: true,
+                  stepSize: 4500,
                 },
                 gridLines: {
                   display: true,
