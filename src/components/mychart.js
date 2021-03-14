@@ -1,4 +1,4 @@
-import { HorizontalBar, Line } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import React from "react";
 import "../App.scss";
 
@@ -8,6 +8,9 @@ const Mychart = (props) => {
 
   let count = 0;
   const levels = [];
+  //Count how many levels the character has. It is in the attackData props. attackData is an array with
+  // The attack points of every level so its length is the number of levels.
+  // Push those attack points into the levels [] array.
   props.attackData.forEach((item) => {
     levels.push(++count);
   });
@@ -25,7 +28,7 @@ const Mychart = (props) => {
           hoverBorderWidth: 3,
           hoverBorderColor: "#000",
           pointBackgroundColor: "rgba(0, 0, 0, 0.1)",
-          pointBorderColor: "rgba(0, 0, 0, 0.0)",
+          pointBorderColor: "rgba(0, 0, 0, 0.0)", //This will make the dots invisible since no opacity.
           pointStyle: "line",
         },
         {
@@ -36,7 +39,7 @@ const Mychart = (props) => {
           borderColor: "#15af27",
           hoverBorderWidth: 3,
           hoverBorderColor: "#000",
-          pointBorderColor: "rgba(0, 0, 0, 0.0)",
+          pointBorderColor: "rgba(0, 0, 0, 0.0)", //This will make the dots invisible since no opacity.
           pointStyle: "line",
         },
       ],
@@ -94,8 +97,6 @@ const Mychart = (props) => {
     <div className="chart">
       <Line
         data={chartData}
-        width={100}
-        height={50}
         options={{
           responsive: true,
           maintainAspectRatio: true,
@@ -112,8 +113,8 @@ const Mychart = (props) => {
             xAxes: [
               {
                 ticks: {
-                 // beginAtZero: true,
-                 min: 10,
+                  // beginAtZero: true,
+                  min: 10,
                   //max: 100,
                   //display:false
                   maxTicksLimit: 5,

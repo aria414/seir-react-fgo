@@ -16,7 +16,7 @@ const Nav = (props) => {
         <div className="icon">
           <Link to="/servantlist">
             <i className="las la-scroll"></i>
-            <h3>Servant List</h3>
+            <h3>Character List</h3>
           </Link>
         </div>
         <div className="icon">
