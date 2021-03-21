@@ -20,9 +20,9 @@ const Nav = (props) => {
           </Link>
         </div>
         <div className="icon">
-          <Link to="/">
+          <Link to="/about">
             <i className="las la-images"></i>
-            <h3>Craft Escence</h3>
+            <h3>About the Game</h3>
           </Link>
         </div>
       </div>

@@ -66,7 +66,7 @@ const ServantList = () => {
 
     return (
       <>
-        <h1>Servants List</h1>
+        <h1>Characters List</h1>
         <ul className="class-icons">{classIcons}</ul>
         <div className="servant-list">{servantarr}</div>
       </>

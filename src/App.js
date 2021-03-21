@@ -1,5 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Main from "./pages/main";
+import About from "./pages/about";
 import ServantList from "./pages/servantslist";
 import Nav from "./components/nav";
 import ServantDisplay from "./pages/servantdisplay";
@@ -33,6 +34,9 @@ function App() {
             path="/servantdisplay/:symbol"
             render={(routerProps) => <ServantDisplay {...routerProps} />}
           />
+          <Route path="/about">
+            <About />
+          </Route>
         </Switch>
       </div>
     </div>
