@@ -45,6 +45,3 @@ const Main = () => {
 };
 
 export default Main;
-/*
-      <Mychart />
-*/

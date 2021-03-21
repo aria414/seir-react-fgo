@@ -30,19 +30,3 @@ const Nav = (props) => {
   );
 };
 export default Nav;
-
-/* 
-
-import { BiHomeSmile } from "react-icons/bi";
-import { RiFilePaper2Line } from "react-icons/ri";
-
-    <div className="nav">
-      <Link to="/">
-         <BiHomeSmile className="react-icons link-active" />
-      </Link>
-      <Link to="/servantlist">
-        <IoLibraryOutline />
-        <RiFilePaper2Line className="react-icons" />
-      </Link>
-    </div>
-*/

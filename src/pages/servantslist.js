@@ -33,7 +33,6 @@ const ServantList = () => {
         for (let i = 0; i < words.length; i++) {
           words[i] = words[i][0].toUpperCase() + words[i].slice(1);
         }
-        //console.log(words.join(" "));
         return words.join(" ");
       };
       const svtClass = titleClass(item.className);
@@ -73,7 +72,6 @@ const ServantList = () => {
     );
   };
 
-  // If the data is null, it will just display Page Loading...
   const loading = () => {
     return <h1>Page Loading...</h1>;
   };
