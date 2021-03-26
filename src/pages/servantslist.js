@@ -3,7 +3,7 @@ import React from "react";
 import "../App.scss";
 import { Link } from "react-router-dom";
 //Import the file containing the images for the class icons.
-import iconimages from "../Iconimages";
+//import iconimages from "../Iconimages";
 
 const ServantList = () => {
   // Use this URL to get the list of Servants to Display
@@ -55,18 +55,18 @@ const ServantList = () => {
     });
 
     // Map the icons images from the array with urls and the alt name.
-    const classIcons = iconimages.map((item, index) => {
-      return (
-        <li key={index}>
-          <img src={item.iconurl} alt={item.name} />
-        </li>
-      );
-    });
+    // const classIcons = iconimages.map((item, index) => {
+    //   return (
+    //     <li key={index}>
+    //       <img src={item.iconurl} alt={item.name} />
+    //     </li>
+    //   );
+    // });
 
     return (
       <>
         <h1>Characters List</h1>
-        <ul className="class-icons">{classIcons}</ul>
+        <ul className="class-icons">{/*classIcons*/}</ul>
         <div className="servant-list">{servantarr}</div>
       </>
     );

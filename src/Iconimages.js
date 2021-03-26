@@ -18,73 +18,90 @@ Beast - https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_21.png
 const iconimages = [
   {
     name: "Saber",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_1.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_1.png",
+    silver: "https://grandorder.wiki/images/d/d3/Icon_Class_Saber_Silver.png",
+    bronze: "https://grandorder.wiki/images/1/17/Icon_Class_Saber_Bronze.png",
   },
   {
     name: "Archer",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_2.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_2.png",
+    silver: "https://grandorder.wiki/images/7/79/Icon_Class_Archer_Silver.png",
+    bronze: "https://grandorder.wiki/images/d/d6/Icon_Class_Archer_Bronze.png",
   },
   {
     name: "Lancer",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_3.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_3.png",
+    silver: "https://grandorder.wiki/images/3/37/Icon_Class_Lancer_Silver.png",
+    bronze: "https://grandorder.wiki/images/c/c5/Icon_Class_Lancer_Bronze.png",
   },
   {
     name: "Rider",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_4.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_4.png",
+    silver: "https://grandorder.wiki/images/f/fc/Icon_Class_Rider_Silver.png",
+    bronze: "https://grandorder.wiki/images/a/ab/Icon_Class_Rider_Bronze.png",
   },
   {
     name: "Caster",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_5.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_5.png",
+    silver: "https://grandorder.wiki/images/6/68/Icon_Class_Caster_Silver.png",
+    bronze: "https://grandorder.wiki/images/7/75/Icon_Class_Caster_Bronze.png",
   },
   {
     name: "Assasin",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_6.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_6.png",
+    silver:
+      "https://grandorder.wiki/images/0/01/Icon_Class_Assassin_Silver.png",
+    bronze:
+      "https://grandorder.wiki/images/1/11/Icon_Class_Assassin_Bronze.png",
   },
   {
     name: "Berserker",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_7.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_7.png",
+    silver:
+      "https://grandorder.wiki/images/3/37/Icon_Class_Berserker_Silver.png",
+    bronze:
+      "https://grandorder.wiki/images/c/c0/Icon_Class_Berserker_Bronze.png",
   },
   {
-    name: "Sheilder",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_8.png",
+    name: "Shielder",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_8.png",
+    silver:
+      "https://grandorder.wiki/images/a/af/Icon_Class_Shielder_Silver.png",
   },
   {
     name: "Ruler",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_9.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_9.png",
+    silver: "https://grandorder.wiki/images/2/22/Icon_Class_Ruler_Silver.png",
+    bronze: "https://grandorder.wiki/images/d/d0/Icon_Class_Ruler_Bronze.png",
   },
   {
     name: "Alter Ego",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_10.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_10.png",
+    silver:
+      "https://grandorder.wiki/images/7/7e/Icon_Class_Alter-Ego_Silver.png",
+    bronze:
+      "https://grandorder.wiki/images/5/5e/Icon_Class_Alter-Ego_Bronze.png",
   },
   {
     name: "Avenger",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_11.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_11.png",
+    silver: "https://grandorder.wiki/images/4/48/Icon_Class_Avenger_.png",
   },
   {
     name: "Moon Cancer",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_23.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_23.png",
+    silver:
+      "https://grandorder.wiki/images/4/4d/Icon_Class_Mooncancer_Silver.png",
+    bronze:
+      "https://grandorder.wiki/images/d/d3/Icon_Class_Mooncancer_Bronze.png",
   },
   {
     name: "Foreigner",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_25.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_25.png",
   },
   {
     name: "Beast",
-    iconurl:
-      "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_21.png",
+    gold: "https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_21.png",
   },
 ];
 

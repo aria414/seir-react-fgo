@@ -4,9 +4,10 @@ import Table from "react-bootstrap/Table";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Mychart from "../components/mychart";
 import "../App.scss";
+import iconimages from "../Iconimages";
 
 const ServantDisplay = (props) => {
-  console.log("You summoned: ", props.match.params.symbol);
+  //console.log("You summoned: ", props.match.params.symbol);
 
   //Define a variable to catch the servant ID when clicked on link on Listing page
   const symbol = props.match.params.symbol;
@@ -151,6 +152,26 @@ const ServantDisplay = (props) => {
     const endurance = calcStat(current.profile.stats.endurance);
     const luck = calcStat(current.profile.stats.luck);
 
+    // 3* saber --> saber[silver] ... current.rarity = color of stars.
+    //Filter the array of objects to find the object of the current character's class.
+    //Then using its rarity, determine what color the icon should use.
+    const classIcon = iconimages.filter((item, index) => {
+      return item.name.toLowerCase() === current.className;
+    });
+    console.log(classIcon);
+
+    let classColor = "";
+
+    if (current.rarity === 0 || current.rarity === 3) {
+      classColor = "silver";
+    }
+    if (current.rarity <= 2) {
+      classColor = "bronze";
+    }
+    if (current.rarity >= 4) {
+      classColor = "gold";
+    }
+
     return (
       <>
         <section className="profile">
@@ -159,7 +180,7 @@ const ServantDisplay = (props) => {
             <h2>{current.name}</h2>
             <ul>{stararray}</ul>
             <div>
-              <img src="https://assets.atlasacademy.io/GameData/JP/ClassIcons/class3_1.png" />
+              <img src={classIcon[0][classColor]} />
               <h3>
                 ID: {current.id} | Cost: {current.cost} | Attribute:{" "}
                 {current.attribute}
