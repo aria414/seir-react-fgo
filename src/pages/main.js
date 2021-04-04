@@ -10,6 +10,10 @@ const Main = () => {
       <h4>Platforms: Android and iOS</h4>
       <h4>Initial Release Date: July 2015</h4>
 
+      <br />
+
+      <h4>Click on Character List link to checkout the playable characters</h4>
+
       <p>
         Thank you for visiting this website. The API for the data was provided
         for free by the incredible team from{" "}
